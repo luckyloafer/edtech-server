@@ -28,8 +28,8 @@ app.post('/create-checkout-session',async(req,res)=>{
         payment_method_types:['card'],
         line_items:lineItems,
         mode:'payment',
-        success_url:'http://localhost:5173/paymentSuccess',
-        cancel_url:'http://localhost:5173/paymentFailure'
+        success_url:'https://edtech-client-topaz.vercel.app/paymentSuccess',
+        cancel_url:'https://edtech-client-topaz.vercel.app/paymentFailure'
     })
 
     res.json({id:session.id})
